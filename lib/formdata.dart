@@ -205,7 +205,7 @@ class _fromdataState extends State<fromdata> {
                 ListView.builder(
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
-                    itemCount: snapshot.data!.length,
+                    itemCount: snapshot.data!['fields'].length,
                     itemBuilder:(context,index){
                       return _row(index,snapshot.data!['fields'][index]["name"],snapshot.data!['fields'][index]["type"],snapshot.data!['fields'][index]["id"],snapshot.data!['fields'][index]["options"]);
           }
